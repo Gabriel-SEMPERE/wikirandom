@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiRandom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>WikiRandom</h1>
+        
+        <div class="controls">
+            <label for="articleCount">Nombre :</label>
+            <input type="number" id="articleCount" value="5" min="1" max="10">
+            <button onclick="genererArticles()">Générer</button>
+        </div>
+
+        <p id="loader" class="loader">Chargement...</p>
+        <ul id="result-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
